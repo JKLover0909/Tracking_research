@@ -1,0 +1,277 @@
+{
+  "video": "/mnt/nvme/opt/Tracking_research/assets/ps_Long/1_2026-04-23_144019.mp4",
+  "output": "/mnt/nvme/opt/Tracking_research/assets/video_results/difference_bytetrack_vs_botsort_19.mp4",
+  "frames": 2501,
+  "common_tracker_params": {
+    "track_high_thresh": 0.55,
+    "track_low_thresh": 0.1,
+    "new_track_thresh": 0.6,
+    "track_buffer": 240,
+    "match_thresh": 0.8,
+    "fuse_score": true
+  },
+  "botsort_extra_params": {
+    "gmc_method": null,
+    "proximity_thresh": 0.5,
+    "appearance_thresh": 0.45,
+    "with_reid": true,
+    "model": "auto"
+  },
+  "fairness_note": "ByteTrack and BoT-SORT use identical common tracker parameters. BoT-SORT-only ReID/GMC parameters are enabled as its algorithm-specific features. Execution order alternates per frame unless --fixed-order is used.",
+  "accuracy_note": "True tracking accuracy requires ground-truth labels. Without ground truth, this report uses ID-stability proxy metrics such as unique IDs, short tracks, lost/reappeared ID events, and track observed duration.",
+  "trackers": {
+    "bytetrack": {
+      "name": "ByteTrack",
+      "frames": 2501,
+      "unique_ids": 13,
+      "avg_active_ids": 2.317872850859656,
+      "max_active_ids": 4,
+      "avg_detections_per_frame": 2.317872850859656,
+      "new_id_events": 13,
+      "lost_id_events": 34,
+      "reappeared_id_events": 24,
+      "gap_events": 24,
+      "short_tracks": 2,
+      "avg_track_observed_frames": 445.9230769230769,
+      "median_track_observed_frames": 106.0,
+      "avg_confidence": 0.88988655568074,
+      "avg_fps": 16.722681034945293,
+      "avg_latency_ms": 59.79902372773275,
+      "median_latency_ms": 56.33355000099982,
+      "p95_latency_ms": 58.03801900037797,
+      "id_fragmentation_proxy": 5.608590650336382
+    },
+    "botsort": {
+      "name": "BoT-SORT",
+      "frames": 2501,
+      "unique_ids": 13,
+      "avg_active_ids": 2.318672530987605,
+      "max_active_ids": 4,
+      "avg_detections_per_frame": 2.318672530987605,
+      "new_id_events": 13,
+      "lost_id_events": 32,
+      "reappeared_id_events": 22,
+      "gap_events": 22,
+      "short_tracks": 2,
+      "avg_track_observed_frames": 446.0769230769231,
+      "median_track_observed_frames": 106.0,
+      "avg_confidence": 0.8897685922411191,
+      "avg_fps": 10.854729101107509,
+      "avg_latency_ms": 92.12574451977525,
+      "median_latency_ms": 86.1639050017402,
+      "p95_latency_ms": 115.56320499948924,
+      "id_fragmentation_proxy": 5.606656320055182
+    }
+  },
+  "track_lifetimes": [
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 1,
+      "first_frame": 1,
+      "last_frame": 2501,
+      "observed_frames": 2501,
+      "gap_events": 0
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 2,
+      "first_frame": 1,
+      "last_frame": 107,
+      "observed_frames": 106,
+      "gap_events": 1
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 3,
+      "first_frame": 1,
+      "last_frame": 467,
+      "observed_frames": 462,
+      "gap_events": 1
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 4,
+      "first_frame": 6,
+      "last_frame": 48,
+      "observed_frames": 30,
+      "gap_events": 2
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 7,
+      "first_frame": 77,
+      "last_frame": 79,
+      "observed_frames": 3,
+      "gap_events": 0
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 8,
+      "first_frame": 306,
+      "last_frame": 417,
+      "observed_frames": 109,
+      "gap_events": 2
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 11,
+      "first_frame": 675,
+      "last_frame": 2493,
+      "observed_frames": 1802,
+      "gap_events": 11
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 12,
+      "first_frame": 1924,
+      "last_frame": 2043,
+      "observed_frames": 72,
+      "gap_events": 3
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 14,
+      "first_frame": 1980,
+      "last_frame": 2501,
+      "observed_frames": 522,
+      "gap_events": 0
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 16,
+      "first_frame": 2010,
+      "last_frame": 2052,
+      "observed_frames": 10,
+      "gap_events": 1
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 19,
+      "first_frame": 2059,
+      "last_frame": 2120,
+      "observed_frames": 35,
+      "gap_events": 1
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 21,
+      "first_frame": 2347,
+      "last_frame": 2373,
+      "observed_frames": 20,
+      "gap_events": 2
+    },
+    {
+      "tracker": "ByteTrack",
+      "raw_id": 23,
+      "first_frame": 2377,
+      "last_frame": 2501,
+      "observed_frames": 125,
+      "gap_events": 0
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 1,
+      "first_frame": 1,
+      "last_frame": 2501,
+      "observed_frames": 2501,
+      "gap_events": 0
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 2,
+      "first_frame": 1,
+      "last_frame": 107,
+      "observed_frames": 106,
+      "gap_events": 1
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 3,
+      "first_frame": 1,
+      "last_frame": 467,
+      "observed_frames": 462,
+      "gap_events": 1
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 5,
+      "first_frame": 6,
+      "last_frame": 48,
+      "observed_frames": 30,
+      "gap_events": 2
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 6,
+      "first_frame": 77,
+      "last_frame": 79,
+      "observed_frames": 3,
+      "gap_events": 0
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 9,
+      "first_frame": 306,
+      "last_frame": 417,
+      "observed_frames": 109,
+      "gap_events": 2
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 10,
+      "first_frame": 675,
+      "last_frame": 2493,
+      "observed_frames": 1803,
+      "gap_events": 10
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 13,
+      "first_frame": 1924,
+      "last_frame": 2040,
+      "observed_frames": 70,
+      "gap_events": 2
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 15,
+      "first_frame": 1980,
+      "last_frame": 2501,
+      "observed_frames": 522,
+      "gap_events": 0
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 17,
+      "first_frame": 2010,
+      "last_frame": 2052,
+      "observed_frames": 13,
+      "gap_events": 1
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 18,
+      "first_frame": 2059,
+      "last_frame": 2120,
+      "observed_frames": 35,
+      "gap_events": 1
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 20,
+      "first_frame": 2347,
+      "last_frame": 2373,
+      "observed_frames": 20,
+      "gap_events": 2
+    },
+    {
+      "tracker": "BoT-SORT",
+      "raw_id": 22,
+      "first_frame": 2377,
+      "last_frame": 2501,
+      "observed_frames": 125,
+      "gap_events": 0
+    }
+  ],
+  "snapshots": []
+}

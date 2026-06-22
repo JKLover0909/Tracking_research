@@ -1,0 +1,123 @@
+# .gitignore for Tracking_research
+# Dành cho nghiên cứu các thuật toán tracking: bỏ qua dữ liệu lớn, checkpoints, logs, môi trường, cache, IDE
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints
+
+# Virtual environments
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.code-workspace
+.DS_Store
+
+# Data and large files (ignore dataset directories by default)
+datasets/
+datasets/raw/
+datasets/processed/
+data/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+
+# Models, checkpoints and large binary artifacts
+checkpoints/
+models/
+experiments/
+results/
+logs/
+figures/
+*.ckpt
+*.pth
+*.pt
+*.h5
+*.pb
+*.onnx
+
+# Training artifacts
+tensorboard-records/
+events.out.tfevents.*
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+*.whl
+
+# Caches and temporary files
+.cache/
+.tmp/
+.pytest_cache/
+*.swp
+*~
+*.log
+
+# Compiled binaries
+*.so
+*.o
+*.a
+*.dll
+
+# Docker / local environment
+docker-compose.override.yml
+.env.*.local
+
+# Local config / secrets
+local_settings.py
+secret*.json
+*.secret
+*.key
+
+# If you want to keep some folders in git, add a .gitkeep inside them and remove the corresponding line above.
+# Videos
+*.mp4
+*.avi
+*.MOV
+
+# Models
+models/
+weights/
+
+# TensorRT
+*.engine
+
+# Videos
+*.mp4
+*.avi
+*.MOV
+
+# Models
+models/
+weights/
+
+# TensorRT
+*.engine
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+venv/
+# video files
+*.avi
+*.AVI
+*.mp4
+*.MP4
+*.mov
+*.MOV

@@ -1,0 +1,21 @@
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
+# BoT-SORT tracker tuned for better ID persistence in person tracking
+# Docs: https://docs.ultralytics.com/modes/track/
+
+tracker_type: bytetrack
+track_high_thresh: 0.55
+track_low_thresh: 0.20
+new_track_thresh: 0.60
+track_buffer: 240
+match_thresh: 0.8
+fuse_score: True
+
+# Camera motion compensation helps reduce false switches when camera moves.
+gmc_method: None
+
+# ReID settings: require both spatial proximity and appearance similarity.
+proximity_thresh: 0.55
+appearance_thresh: 0.50
+with_reid: False
+model: auto

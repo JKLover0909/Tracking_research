@@ -1,0 +1,98 @@
+{
+  "output_video": "/mnt/nvme/opt/Tracking_research/assets/ps_Long/merged_3cams_1080p_preview.mp4",
+  "canvas_width": 1920,
+  "canvas_height": 1080,
+  "fps": 30.0,
+  "sync_mode": "time",
+  "layout": "row",
+  "gap": 0,
+  "fit": "cover",
+  "cameras": [
+    {
+      "camera_id": 1,
+      "source_path": "/mnt/nvme/opt/Tracking_research/assets/ps_Long/Cam_01.mp4",
+      "source_width": 1280,
+      "source_height": 720,
+      "source_fps": 30.0,
+      "source_frame_count": 3172,
+      "cell": {
+        "x": 0,
+        "y": 0,
+        "width": 700,
+        "height": 1080
+      },
+      "image_region": {
+        "x": 0,
+        "y": 0,
+        "width": 700,
+        "height": 1080
+      },
+      "source_visible_region": {
+        "x": 406.6666666666667,
+        "y": 0.0,
+        "width": 466.6666666666667,
+        "height": 720.0
+      },
+      "scale_x_source_to_canvas": 1.5,
+      "scale_y_source_to_canvas": 1.5
+    },
+    {
+      "camera_id": 2,
+      "source_path": "/mnt/nvme/opt/Tracking_research/assets/ps_Long/Cam_02.mp4",
+      "source_width": 2560,
+      "source_height": 1920,
+      "source_fps": 30.0,
+      "source_frame_count": 3152,
+      "cell": {
+        "x": 700,
+        "y": 0,
+        "width": 525,
+        "height": 1080
+      },
+      "image_region": {
+        "x": 700,
+        "y": 0,
+        "width": 525,
+        "height": 1080
+      },
+      "source_visible_region": {
+        "x": 812.4444444444445,
+        "y": 0.0,
+        "width": 933.3333333333334,
+        "height": 1920.0
+      },
+      "scale_x_source_to_canvas": 0.5625,
+      "scale_y_source_to_canvas": 0.5625
+    },
+    {
+      "camera_id": 3,
+      "source_path": "/mnt/nvme/opt/Tracking_research/assets/ps_Long/Cam_03.mp4",
+      "source_width": 2688,
+      "source_height": 1520,
+      "source_fps": 30.0,
+      "source_frame_count": 3183,
+      "cell": {
+        "x": 1225,
+        "y": 0,
+        "width": 695,
+        "height": 1080
+      },
+      "image_region": {
+        "x": 1225,
+        "y": 0,
+        "width": 695,
+        "height": 1080
+      },
+      "source_visible_region": {
+        "x": 854.2962962962963,
+        "y": 0.0,
+        "width": 978.1481481481482,
+        "height": 1520.0
+      },
+      "scale_x_source_to_canvas": 0.7105263157894737,
+      "scale_y_source_to_canvas": 0.7105263157894737
+    }
+  ],
+  "written_frames": 1,
+  "normalized_cell": true
+}
